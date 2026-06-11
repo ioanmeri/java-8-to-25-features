@@ -17,6 +17,14 @@ public class Student {
         this.activities = activities;
     }
 
+    public Student() {
+
+    }
+
+    public Student(String s) {
+        this.name = s;
+    }
+
     public String getGender() { return gender;}
 
     public void setGender(String gender) {this.gender = gender;}
@@ -32,6 +40,10 @@ public class Student {
     public double getGpa() { return gpa;}
 
     public void setGpa(double gpa) { this.gpa =  gpa;}
+
+    public void printListOfActivities(){
+        System.out.println(activities);
+    }
 
     List<String> activities = new ArrayList<>();
 

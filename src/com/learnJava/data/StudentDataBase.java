@@ -8,6 +8,11 @@ import java.util.function.Supplier;
 
 public class StudentDataBase {
 
+
+    public static Supplier<Student> studentSupplier = () -> {
+        return new Student("Adam", 2, 3.6, "male", Arrays.asList("swimming", "basketball", "volleyball"));
+    };
+
     public static List<Student> getAllStudents(){
 
         Student student1 = new Student("Adam", 2, 3.6, "male", Arrays.asList("swimming", "basketball", "volleyball"));
