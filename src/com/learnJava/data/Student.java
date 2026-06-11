@@ -3,7 +3,6 @@ package com.learnJava.data;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class Student {
     private String name;
     private int gradeLevel;
